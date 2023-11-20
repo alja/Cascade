@@ -1,14 +1,15 @@
-OssTests
+Cascade/BranchAddr
 ========
 
-cmssw and fwlite tests. For spars checkouts use:
+
+### Sources
 ```
-git clone --no-checkout git@github.com:osschar/OssTests.git
-cd OssTests
-echo BranchAddr >> .git/info/sparse-checkout
-git checkout
+git clone https://github.com/alja/Cascade.git
+scram b
 ```
 
-## BranchAddr
-
-Reproduce a bug observed in cmsShow filtering that screws up branch addresses in simple FWlite program.
+### Run code
+```
+wget http://xrd-cache-1.t2.ucsd.edu/alja/waad/gensim.root
+cascade.exe /data2/alja/simTracks/gensim.root
+```
